@@ -1,0 +1,12 @@
+#ProductCorusel
+{
+    width: 100%;
+    height: 60%;
+    border: 1px solid yellow;
+    align-content: center;
+    text-align: center;
+}
+#ProductCorusel h1
+{
+    font-size: 4rem;
+}

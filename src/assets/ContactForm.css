@@ -1,0 +1,149 @@
+/* ContactForm asosiy container */
+#ContactForm {
+    width: 90% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+}
+
+/* Chap blok: title + social */
+#ContactForm .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* O‘ng blok: map */
+#ContactForm .right {
+    flex: 1;
+}
+
+/* Title */
+#ContactForm h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+#ContactForm h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #3b82f6;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* Social links */
+#ContactForm .contact_form_social_links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#ContactForm .contact_form_social_links i {
+    font-size: 2rem;
+    color: #2d2d2d;
+    background: #e5e7eb;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#ContactForm .contact_form_social_links i:hover {
+    background: #3b82f6;
+    color: #fff;
+    transform: translateY(-4px) scale(1.1);
+}
+
+/* Map */
+#ContactForm .Location iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.1);
+}
+
+/* 📱 Mobile (≤600px) */
+@media (max-width: 600px) {
+    #ContactForm {
+        padding: 20px;
+    }
+
+    #ContactForm {
+        flex-direction: column;
+    }
+
+    #ContactForm h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #ContactForm .contact_form_social_links {
+        justify-content: center;
+    }
+
+    #ContactForm .Location iframe {
+        min-height: 220px;
+    }
+}
+
+/* 📲 Tablet (601px–991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+    #ContactForm {
+        flex-direction: column;
+    }
+
+    #ContactForm h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #ContactForm .contact_form_social_links {
+        justify-content: center;
+    }
+
+    #ContactForm .Location iframe {
+        min-height: 280px;
+    }
+}
+
+/* 💻 Desktop (≥992px) */
+@media (min-width: 992px) {
+    #ContactForm {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    #ContactForm h3 {
+        text-align: left;
+    }
+
+    #ContactForm .contact_form_social_links {
+        justify-content: flex-start;
+    }
+
+    #ContactForm .left {
+        flex: 1;
+    }
+
+    #ContactForm .right {
+        flex: 1;
+    }
+
+    #ContactForm .Location iframe {
+        min-height: 350px;
+    }
+}

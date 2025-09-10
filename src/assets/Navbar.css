@@ -1,0 +1,121 @@
+/* Umumiy */
+#Navbar {
+    background-color: slategray;
+    height: 10vh;
+    border-bottom: 1px solid #eee;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+}
+
+#Navbar .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Burger tugma */
+.burger_menu {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.burger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Social links - desktop */
+.social_links {
+    justify-content: right;
+    width: 25%;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+.social_links i
+{
+    color: white;
+}
+.logo_box {
+    max-height: 70px;
+    width: 30%;
+    text-align: center;
+}
+.logo_box img {
+    height: 140px;
+}
+
+/* Slide menyu */
+.navigation_menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* default yashirin */
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff;
+    padding: 60px 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* menyu va social linksni pastga joylashtirish */
+    transition: left 0.4s ease-in-out; /* smooth chiqish */
+}
+
+.navigation_menu.open {
+    left: 0; /* ochilganda ko‘rinadi */
+}
+
+.navigation_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation_menu li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navigation_menu li:hover {
+    color: #0073e6;
+}
+
+/* Social links - burger ichida */
+.navigation_menu .social_links {
+    justify-content: flex-start;
+    margin-top: 40px;
+    gap: 20px;
+    font-size: 22px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .social_links {
+        display: none; /* planshet va mobile versiyada tashqaridagi social links yashiriladi */
+    }
+}

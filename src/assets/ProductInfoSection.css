@@ -1,0 +1,12 @@
+#ProductInfoSection
+{
+    width: 100%;
+    height: 40%;
+    border: 1px solid blue;
+    align-content: center;
+    text-align: center;
+}
+#ProductInfoSection h1
+{
+    font-size: 3rem;
+}
