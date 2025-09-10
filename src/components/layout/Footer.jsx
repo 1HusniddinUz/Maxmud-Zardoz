@@ -2,7 +2,7 @@ import "../../assets/Footer.css"
 import ContactForm from "../ui/ContactForm.jsx";
 const Footer = () => {
     return (
-        <footer>
+        <div id="Footer">
             <div className="container">
                 <ContactForm />
             </div>
@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
             </div>
 
-        </footer>
+        </div>
     )
 }
 export default Footer

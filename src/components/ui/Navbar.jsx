@@ -38,10 +38,10 @@ const Navbar = () => {
 
                 {/* Menyu itemlari */}
                 <ul>
-                    <li>Products</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <a href="/"><li>Home</li></a>
+                    <a href="#ProductInfoSection"><li>About</li></a>
+                    <a href="#Products"> <li>Our Products</li></a>
+                    <a href="#Footer"><li>Contact</li></a>
                 </ul>
 
                 {/* Social links - burger ichida */}

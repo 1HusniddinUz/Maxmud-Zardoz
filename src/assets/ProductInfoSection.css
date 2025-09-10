@@ -1,12 +1,73 @@
-#ProductInfoSection
-{
+/* Umumiy Section */
+#ProductInfoSection {
     width: 100%;
-    height: 40%;
-    border: 1px solid blue;
-    align-content: center;
-    text-align: center;
+    padding: 60px 0;
+    background: #f9fafb; /* juda ochiq background */
 }
-#ProductInfoSection h1
-{
-    font-size: 3rem;
+
+/* Container */
+#ProductInfoSection .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* telefon uchun ham ishlaydi */
+}
+
+/* Box dizayn */
+.ProductInfo_box {
+    flex: 1 1 30%;
+    min-width: 260px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* Hover effekti */
+.ProductInfo_box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Icon */
+.ProductInfo_box i {
+    font-size: 2.5rem;
+    color: #061944; /* chiroyli ko‘k */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.ProductInfo_box:hover i {
+    color: #1937a1;
+}
+
+/* Text */
+.ProductInfo_box p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111827;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Responsiv dizayn */
+@media (max-width: 992px) {
+    #ProductInfoSection .container {
+        justify-content: center;
+    }
+    .ProductInfo_box {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .ProductInfo_box {
+        flex: 1 1 100%;
+    }
 }

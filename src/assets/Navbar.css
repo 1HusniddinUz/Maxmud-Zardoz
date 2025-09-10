@@ -1,12 +1,12 @@
 /* Umumiy */
 #Navbar {
-    background-color: slategray;
+    background-color: #332918;
     height: 10vh;
-    border-bottom: 1px solid #eee;
     padding: 10px 20px;
     position: relative;
     z-index: 1000;
     width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* pastki shadow */
 }
 
 #Navbar .container {
@@ -42,6 +42,7 @@
 }
 .social_links i
 {
+    cursor: pointer;
     color: white;
 }
 .logo_box {

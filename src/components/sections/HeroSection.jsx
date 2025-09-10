@@ -1,8 +1,10 @@
 import "../../assets/HeroSection.css"
+import background_image from "../../assets/media/background_image.png"
+
 const HeroSection = () =>{
     return (
         <div id="HeroSection">
-            <h1>This part for HeroSection</h1>
+            <img src={background_image} alt="MAXMUD-ZARDOZ" loading="lazy"/>
         </div>
     )
 }
