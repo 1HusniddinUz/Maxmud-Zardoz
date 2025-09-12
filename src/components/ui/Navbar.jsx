@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div id="Navbar">
             <div className="container">
-                {/* Burger tugma */}
+                {/* Burger tugma - faqat mobile/tablet */}
                 <div className="burger_menu">
                     <button className="burger" onClick={() => setIsOpen(true)}>
                         ☰
@@ -17,39 +17,47 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className="logo_box">
-                    <img src={logo} alt=""/>
+                    <img src={logo} alt="Logo"/>
                 </div>
 
-                {/* Social links - faqat desktop */}
-                <div className="social_links">
-                    <i className="fa-brands fa-whatsapp"></i>
-                    <i className="fa-brands fa-instagram"></i>
-                    <i className="fa-brands fa-telegram"></i>
-                    <i className="fa-brands fa-facebook"></i>
+                {/* Desktop navigation + language */}
+                <div className="desktop_nav">
+                    <ul className="nav_links">
+                        <a href="/"><li>Home</li></a>
+                        <a href="#ProductInfoSection"><li>About</li></a>
+                        <a href="#Products"><li>Our Products</li></a>
+                        <a href="#Footer"><li>Contact</li></a>
+                    </ul>
+
+                    <div className="lang_provider">
+                        <select>
+                            <option value="uz">UZ</option>
+                            <option value="ru">RU</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
-            {/* Slide menyu */}
+            {/* Slide menyu - mobile & tablet */}
             <div className={`navigation_menu ${isOpen ? "open" : ""}`}>
-                {/* Yopish tugmasi */}
                 <button className="close_btn" onClick={() => setIsOpen(false)}>
                     ✕
                 </button>
 
-                {/* Menyu itemlari */}
                 <ul>
                     <a href="/"><li>Home</li></a>
                     <a href="#ProductInfoSection"><li>About</li></a>
-                    <a href="#Products"> <li>Our Products</li></a>
+                    <a href="#Products"><li>Our Products</li></a>
                     <a href="#Footer"><li>Contact</li></a>
                 </ul>
 
-                {/* Social links - burger ichida */}
-                <div className="social_links">
-                    <i className="fa-brands fa-whatsapp"></i>
-                    <i className="fa-brands fa-instagram"></i>
-                    <i className="fa-brands fa-telegram"></i>
-                    <i className="fa-brands fa-facebook"></i>
+                <div className="lang_provider_mobile">
+                    <select>
+                        <option value="uz">UZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
                 </div>
             </div>
         </div>
