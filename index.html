@@ -1,21 +1,193 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =========================
+         TITLE & BASIC SEO
+    ========================== -->
+    <title>MAXMUD ZARDO'Z | Zardo‘z choponlar va milliy erkaklar liboslari</title>
+    <meta
+            name="description"
+            content="MAXMUD ZARDO'Z — Buxorolik ustalar tomonidan yaratilgan milliy zardo‘z choponlar, erkaklar liboslari va qo‘lda ishlangan hashamatli kiyimlar. Har bir libosda ustalik, did va sharqona nafislik mujassam."
+    />
+    <meta
+            name="keywords"
+            content="MAXMUD ZARDO'Z, zardo‘z choponlar, milliy kiyimlar, erkaklar kiyimlari, zardo‘z ustasi, Buxoro zardo‘zligi, qo‘lda tikilgan kiyimlar, milliy moda, milliy dizayn, o‘zbek kiyimlari, zardo‘z san’ati, handmade fashion, premium choponlar, o‘zbek modasi, Buxoro chopon, sharqona kiyimlar, zardo‘z brend"
+    />
+    <meta name="author" content="MAXMUD ZARDO'Z Team" />
+    <meta name="theme-color" content="#8B5E3C" />
+    <meta name="generator" content="Vite + React + ChatGPT SEO Stack" />
 
+    <!-- =========================
+         FAVICON & BRAND ICON
+    ========================== -->
+    <!-- ✅ logotip joylashuvi: /src/assets/images/logo.png -->
+    <link rel="icon" href="./src/assets/images/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./src/assets/images/logo.png" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>MAXMUD ZARDO'Z</title>
+    <!-- =========================
+         PREFETCH & PERFORMANCE
+    ========================== -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+    />
 
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <!-- =========================
+         FONT AWESOME ICONS
+    ========================== -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <!-- =========================
+         OPEN GRAPH (SOCIAL MEDIA PREVIEW)
+         ✅ preview.png: /public/preview.png
+    ========================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maxmud-zardoz.uz" />
+    <meta property="og:title" content="MAXMUD ZARDO'Z — Milliy zardo‘z choponlar" />
+    <meta
+            property="og:description"
+            content="MAXMUD ZARDO'Z — Buxorolik ustalar yaratgan milliy zardo‘z choponlar va erkaklar liboslari. Sharqona an’ana va zamonaviy uslub uyg‘unligi."
+    />
+    <meta property="og:image" content="./public/preview.png" />
+    <meta property="og:site_name" content="MAXMUD ZARDO'Z" />
+
+    <!-- =========================
+         TWITTER CARD
+    ========================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MAXMUD ZARDO'Z | Zardo‘z choponlar" />
+    <meta
+            name="twitter:description"
+            content="Qo‘lda tikilgan milliy zardo‘z choponlar — MAXMUD ZARDO'Z brendi. Har bir naqshda ustalik va nafislik."
+    />
+    <meta name="twitter:image" content="./public/preview.png" />
+
+    <!-- =========================
+         SCHEMA.ORG JSON-LD (BUSINESS)
+    ========================== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "MAXMUD ZARDO'Z",
+            "image": "https://maxmud-zardoz.uz/public/preview.png",
+            "@id": "https://maxmud-zardoz.uz",
+            "url": "https://maxmud-zardoz.uz",
+            "telephone": "+998907182803",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Buxoro zardo‘zlik markazi",
+                "addressLocality": "Buxoro",
+                "postalCode": "200100",
+                "addressCountry": "UZ"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.769043,
+                "longitude": 64.385675
+            },
+            "openingHours": "Mo-Sa 09:00-19:00",
+            "sameAs": [
+                "https://www.instagram.com/maxmud_069",
+                "https://t.me/+998907182803",
+                "https://maps.google.com/maps?q=39.769043,64.385675"
+            ],
+            "description": "MAXMUD ZARDO'Z — Buxorolik ustalar tomonidan yaratilgan milliy zardo‘z choponlar va erkaklar liboslari brendi. Har bir libosda ustalik, an’ana va sharqona nafislik."
+        }
+    </script>
+
+    <!-- =========================
+         SCHEMA.ORG JSON-LD (PRODUCT EXAMPLE)
+    ========================== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Zardo‘z milliy chopon",
+            "image": "https://maxmud-zardoz.uz/public/preview.png",
+            "description": "Qo‘lda ishlangan, zardo‘z naqshlar bilan bezatilgan erkaklar choponi. Buxorolik ustalar tomonidan tayyorlangan premium darajadagi libos.",
+            "brand": {
+                "@type": "Brand",
+                "name": "MAXMUD ZARDO'Z"
+            },
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "UZS",
+                "price": "1500000",
+                "availability": "https://schema.org/InStock",
+                "url": "https://maxmud-zardoz.uz"
+            }
+        }
+    </script>
+
+    <!-- =========================
+         SCHEMA.ORG JSON-LD (BREADCRUMB)
+    ========================== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Bosh sahifa",
+                    "item": "https://maxmud-zardoz.uz"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Mahsulotlar",
+                    "item": "https://maxmud-zardoz.uz/products"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Zardo‘z choponlar",
+                    "item": "https://maxmud-zardoz.uz/zardoz-choponlar"
+                }
+            ]
+        }
+    </script>
+
+    <!-- =========================
+         ROBOTS & INDEXING
+    ========================== -->
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="rating" content="general" />
+
+    <!-- =========================
+         CANONICAL & ALTERNATES
+    ========================== -->
+    <link rel="canonical" href="https://maxmud-zardoz.uz" />
+    <link rel="alternate" hreflang="uz" href="https://maxmud-zardoz.uz" />
+    <link rel="alternate" hreflang="en" href="https://maxmud-zardoz.uz/en" />
+
+</head>
+
+<body>
+<!-- =========================
+     REACT ENTRY POINT
+     ✅ main.jsx orqali yuklanadi
+========================== -->
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
