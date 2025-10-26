@@ -47,6 +47,7 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 #ContactForm .contact_form_social_links i {
@@ -59,12 +60,15 @@
     cursor: pointer;
 }
 
-#ContactForm .contact_form_social_links i:hover {
+#ContactForm .contact_form_social_links a i:hover {
     background: #3b82f6;
     color: #fff;
     transform: translateY(-4px) scale(1.1);
 }
-
+#ContactForm .left a
+{
+    color: #2d2d2d;
+}
 /* Map */
 #ContactForm .Location iframe {
     width: 100%;

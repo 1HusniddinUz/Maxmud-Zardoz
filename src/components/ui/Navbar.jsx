@@ -1,10 +1,11 @@
 import { useState } from "react";
 import logo from "../../../public/logo.png";
 import "../../assets/Navbar.css";
+import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const {t, i18n} = useTranslation();
     return (
         <div id="Navbar">
             <div className="container">
@@ -23,17 +24,20 @@ const Navbar = () => {
                 {/* Desktop navigation + language */}
                 <div className="desktop_nav">
                     <ul className="nav_links">
-                        <a href="/"><li>Home</li></a>
-                        <a href="#ProductInfoSection"><li>About</li></a>
-                        <a href="#Products"><li>Our Products</li></a>
-                        <a href="#Footer"><li>Contact</li></a>
+                        <a href="/"><li>{t(`headersec`)}</li></a>
+                        <a href="#Products"><li>{t(`products`)}</li></a>
+                        <a href="#Footer"><li>{t(`contact`)}</li></a>
                     </ul>
 
                     <div className="lang_provider">
-                        <select>
-                            <option value="uz">UZ</option>
-                            <option value="ru">RU</option>
-                            <option value="en">EN</option>
+                        <select
+                            id="select"
+                            onChange={(e) => i18n.changeLanguage(e.target.value)}
+                            defaultValue="uz"
+                        >
+                            <option value="uz">🇺🇿 O'zbek</option>
+                            <option value="ru">🇷🇺 Русский</option>
+                            <option value="en">🇬🇧 English</option>
                         </select>
                     </div>
                 </div>
@@ -46,17 +50,20 @@ const Navbar = () => {
                 </button>
 
                 <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="#ProductInfoSection"><li>About</li></a>
-                    <a href="#Products"><li>Our Products</li></a>
-                    <a href="#Footer"><li>Contact</li></a>
+                    <a href="/"><li>{t(`headersec`)}</li></a>
+                    <a href="#Products"><li>{t(`(products)`)}</li></a>
+                    <a href="#Footer"><li>{t(`contact`)}</li></a>
                 </ul>
 
                 <div className="lang_provider_mobile">
-                    <select>
-                        <option value="uz">UZ</option>
-                        <option value="ru">RU</option>
-                        <option value="en">EN</option>
+                    <select
+                        id="select"
+                        onChange={(e) => i18n.changeLanguage(e.target.value)}
+                        defaultValue="ru"
+                    >
+                        <option value="uz">🇺🇿 O'zbek</option>
+                        <option value="ru">🇷🇺 Русский</option>
+                        <option value="en">🇬🇧 English</option>
                     </select>
                 </div>
             </div>
