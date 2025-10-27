@@ -18,13 +18,13 @@ const ProductCarousel = () => {
     const { t } = useTranslation();
 
     const products = [
-        { id: 1, name: t("product1"), img: img1, price: 75, type: "Clothes" },
-        { id: 2, name: t("product2"), img: img2, price: 12, type: "Bags" },
-        { id: 3, name: t("product3"), img: img3, price: 17, type: "Bags" },
-        { id: 4, name: t("product4"), img: img4, price: 65, type: "Clothes" },
-        { id: 5, name: t("product5"), img: img5, price: 80, type: "Clothes" },
-        { id: 6, name: t("product6"), img: img6, price: 65, type: "Bags" },
-        { id: 7, name: t("product7"), img: img7, price: 65, type: "Bags" },
+        { id: 1, name: t("product1"), img: img1, price: 95, type: "Clothes" },
+        { id: 2, name: t("product2"), img: img2, price: 90, type: "Bags" },
+        { id: 3, name: t("product3"), img: img3, price: 97, type: "Bags" },
+        { id: 4, name: t("product4"), img: img4, price: 92, type: "Clothes" },
+        { id: 5, name: t("product5"), img: img5, price: 95, type: "Clothes" },
+        { id: 6, name: t("product6"), img: img6, price: 100, type: "Bags" },
+        { id: 7, name: t("product7"), img: img7, price: 97, type: "Bags" },
     ];
 
     return (
