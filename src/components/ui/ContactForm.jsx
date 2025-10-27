@@ -5,8 +5,8 @@ const ContactForm = () => {
             <div className="left">
                 <h3>MAXMUD ZARDO'Z</h3>
                 <div className="contact_form_social_links">
-                    <a href="https://t.me/+998907182803" target="_blank" rel="noopener noopener"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="https://instagram.com/maxmud_069" target="_blank" rel="noopener noopener"><i className="fa-brands fa-telegram"></i></a>
+                    <a href="https://instagram.com/maxmud_069" target="_blank" rel="noopener noopener"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/+998907182803" target="_blank" rel="noopener noopener"><i className="fa-brands fa-telegram"></i></a>
                     {/*<a href="https://facebook.com/" target="_blank" rel="noopener noopener"><i className="fa-brands fa-facebook"></i></a>*/}
                 </div>
                 <a href="tel:+998907182803">+998(90) 718-28-03</a>
